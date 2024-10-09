@@ -6,43 +6,42 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Sop");
 
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="max-w-[45rem] text-center leading-8 "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
+      id="sop"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        ตั้งแต่เด็ก ผมมีความสนใจอย่างลึกซึ้งในเทคโนโลยี เริ่มต้นจากการเล่นเกมส์
+        คอมพิวเตอร์ในร้านเกมเหมือนกับเด็กทั่วไป
+        จนกระทั่งตอนที่ผมมีคอมพิวเตอร์เป็นของ ตัวเอง
+        ความหลงใหลในการสำรวจโลกของเทคโนโลยีของผมมันก็เริ่มเติบโตขึ้นเรื่อยๆ
+        ผมเริ่มศึกษาในหลากหลายด้าน เช่น การ Coding , Editing และ Design ในช่วง
+        ม.1 ซึ่งสิ่งเหล่านี้ทำให้ผมเข้าใจว่าเทคโนโลยีไม่เพียงแต่เป็นเครื่องมือ
+        แต่ยังเป็นช่องทางที่ ช่วยให้เราสร้างสรรค์สิ่งใหม่ๆ ได้ตามที่ใจเราวาดไว้
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        เมื่อผมเข้าสู่มัธยมปลาย ผมเริ่มต้นการเดินทางในสายเทคโนโลยีด้วยการเข้า
+        ร่วมการแข่งขัน โดยการแข่งครั้งแรกของผมคือการแข่งขัน Motion Graphic
+        ซึ่งผมได้ ลำดับที่ 5 จากโรงเรียนทั่วกรุงเทพฯ
+        แม้ว่าผมจะภูมิใจในผลลัพธ์นี้ แต่ผมกลับรู้สึกว่ายัง
+        ไม่พบสิ่งที่ตรงกับความสนใจของตัวเอง
+        จุดเปลี่ยนของผมเกิดขึ้นเมื่อผมได้เข้าร่วมค่าย <span className="font-bold"> TobeIT’67 The Second </span>และ
+        <span className="font-bold"> ITCAMP 20</span> ซึ่งนี่ทำให้ผมค้นพบว่าเส้นทางที่ผมชอบ มากที่สุดคือการ Coding
+        และ Web Development ผมรู้สึกทึ่งที่สามารถสร้างทุกอย่าง
+        ที่อยู่ในจินตนาการได้ด้วยมือของตัวเอง
+        การเขียนโปรแกรมเป็นเครื่องมือที่ช่วยให้ผม
+        สามารถทำให้ไอเดียกลายเป็นจริงได้
+        สิ่งนี้เป็นแรงบันดาลใจและเป็นแรงผลักดันที่ทำให้ผมเลือกศึกษาต่อใน {""}
+         <span className="font-bold underline">คณะไอทีลาดกระบัง</span>
       </p>
     </motion.section>
   );

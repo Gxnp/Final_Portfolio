@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/"
+              src="/Profile_Pic.ng"
               alt="Napon Picture"
-              width="192"
-              height="192"
+              width="200"
+              height="200"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-120 w-150 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -58,20 +58,22 @@ export default function Intro() {
       </div>
       {/* แนะนำตัว ประวัติ ชื่อ */}
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-7 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-      >
-        
-        <span className="font-bold">My name is Napon</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        >
+        <div>
+        <span className="">My name is Napon</span>{" "}</div>
+        <span className="">I'm a</span> {" "}
+        <span className="font-bold">Front-End Developer , UX/UI Design , Teaching Director Basic Python</span> {" "}
+        <div>
+          My goal is{" "}
+          <span className="underline font-bold">IT'23 KMITL</span> !
+        </div>
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-6 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

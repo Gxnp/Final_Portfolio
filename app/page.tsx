@@ -8,21 +8,22 @@ import Large_exp from "@/components/large_exp";
 import { MeteorsDemo } from "@/components/meteo";
 import { ExpandableCardDemo } from "@/components/card";
 import { Activities } from "@/components/activity";
-import Activ from "@/components/Achead";
+import Activity from "@/components/Ac_head";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
       <About />
-      <Experience />
-      
+      <SectionDivider />
+      {/* <Experience /> */}      
       {/* <Large_exp/> */}
+
       <Skills />
       <Projects /> 
       <ExpandableCardDemo/>
       <MeteorsDemo/>
-      <Activ/>
+      <Activity/>
       <Activities/>
     </main>
   );

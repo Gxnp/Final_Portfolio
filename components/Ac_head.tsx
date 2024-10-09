@@ -6,7 +6,7 @@ import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 
-export default function Activi() {
+export default function Activity() {
   const { ref } = useSectionInView("Activities", 0.5);
 
   return (

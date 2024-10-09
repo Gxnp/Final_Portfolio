@@ -12,8 +12,8 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Sop",
+    hash: "#sop",
   },
   {
     name: "Education",
@@ -39,7 +39,7 @@ export const textnav = [
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "#sop",
   },
   {
     name: "Contact",
@@ -97,16 +97,23 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "React",
+  "Python",
+  "JavaScript",
+  "Figma",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
+  "Svelte",
   "Tailwind",
+  
+] as const;
+
+export const learnsData = [
+  "TypeScript",
+  "Next.js",
+  "Machine Learning",
   "Prisma",
-  "Python",
+  "Adobe After Effect",
+  "Adobe Premiere Pro",
   
 ] as const;
